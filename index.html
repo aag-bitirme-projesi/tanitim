@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Evermore</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Evermore</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Github</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Demo</a></li>
+            <li><a href="#">Poster</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <img src="assets/stars.png" id="stars" alt="">
+        <img src="assets/moon.png" id="moon" alt="">
+        <!-- <h2 id="text">Evermore</h2> -->
+        <img src="assets/taylor.png" id="taylor" alt="">
+    </section>
+
+    <div class="sec" id="about">
+        <h2>About</h2>
+        <p>
+            We developed a Machine Learning as a Service (MLaaS) web application designed to support users 
+            at all skill levels and enhance workflow efficiency for experienced users. The platform offers a 
+            user-friendly, easy to learn interface for beginners, advanced tools for experts, automated machine 
+            learning features for application development, and community support for collaborative artificial 
+            intelligence research.
+            <br><br>
+            Machine Learning as a Service (MLaaS) is a cloud-based platform that provides machine learning tools 
+            and services. These platforms help users apply advanced machine learning techniques without needing to 
+            know a lot about the underlying math or programming. 
+            <br><br>
+            This application aims to democratize access to machine learning, accelerate innovation, and reduce costs for businesses, 
+            with future plans to enhance user experience, expand algorithm libraries, and incorporate ethical AI practices.
+        </p>
+    </div>
+
+    <div class="sec" id="contact">
+        <h2>Contact</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="name">Ataberk Asar</div>
+                <div class="task">Developer</div>
+                <div class="media">
+                    <a href="https://www.linkedin.com/in/ataberkasar/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/ataberkasar"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="name">Ayça Akyol</div>
+                <div class="task">Developer</div>
+                <div class="media">
+                    <a href="https://www.linkedin.com/in/aycaakyol/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/aycaakyol"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="name">Gamze Ergin</div>
+                <div class="task">Developer</div>
+                <div class="media">
+                    <a href="https://www.linkedin.com/in/gamze-ergin-324156208/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/gamze80"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let taylor = document.getElementById('taylor');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            taylor.style.top = - value * 1.01 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>
+</html>
